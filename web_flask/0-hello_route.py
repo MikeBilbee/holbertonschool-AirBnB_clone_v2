@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Starts a Flask web app that returns 'Hello HBNB!'"""
 
 from flask import Flask
 
