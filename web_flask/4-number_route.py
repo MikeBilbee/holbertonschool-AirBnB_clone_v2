@@ -28,12 +28,8 @@ def python(text='is cool'):
 
 
 @app.route("/number/<n>", strict_slashes=False)
-def number(n):
-    try:
-        n = int(n)
-        return 'n is a number'
-    except ValueError:
-        return 'n is not a number'
+def number(num: int):
+    return "{} is a number".format(num)
 
 
 if __name__ == '__main__':
